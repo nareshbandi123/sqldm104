@@ -1,0 +1,25 @@
+{
+  "database": {
+    "mysql": {
+      "setup": [],
+      "teardown": [
+        "delete from fields where system_name='custom_some_field';",
+        "ALTER TABLE cases DROP COLUMN custom_some_field;"
+      ]
+    },
+    "hosted": {
+      "setup": [],
+      "teardown": [
+        "delete from fields where system_name='custom_some_field';",
+        "ALTER TABLE cases DROP COLUMN custom_some_field;"
+      ]
+    },
+    "mssql": {
+      "setup": [],
+      "teardown": [
+        "delete from fields where system_name='custom_some_field';",
+        "ALTER TABLE cases DROP COLUMN custom_some_field;"
+      ]
+    }
+  }
+}

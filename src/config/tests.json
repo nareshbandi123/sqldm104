@@ -1,0 +1,107 @@
+{
+  "edit_test_case_url": "index.php?/cases/edit/",
+  "messages": {
+    "msg_success_added_test_case":"Successfully added the new test case. Add another",
+    "msg_success_deleted_test_case": "Successfully deleted the test case.",
+    "msg_success_edited_test_case": "Successfully updated the test case."
+  },
+  "default_section_name":"Test Cases",
+  "cases":[
+    {
+      "__type__":"TestCase",
+      "title":"Test",
+      "template":1,
+      "type":3,
+      "priority":1,
+      "estimate":"1m",
+      "refs":"",
+      "custom_automation_type":0,
+      "preconditions":"User is logged in",
+      "steps":"1. Open app\n2.Check displayed page\n3. Open project\n4. Open test cases",
+      "expected_result":"List of test cases is displayed."
+    },
+    {
+      "__type__":"TestCase",
+      "title":"Test",
+      "template":1,
+      "type":7,
+      "priority":2,
+      "estimate":"23s",
+      "refs":"",
+      "custom_automation_type":1,
+      "preconditions":"Internet connection is not available",
+      "steps":"1. Open app\n2.Check displayed error message",
+      "expected_result":"Proper error message is displayed, informing user to turn on internet connection."
+    },
+    {
+      "__type__":"TestCase",
+      "title":"Test",
+      "template":1,
+      "type":9,
+      "priority":3,
+      "estimate":"10m",
+      "refs":"",
+      "custom_automation_type":0,
+      "preconditions":"Application is not available",
+      "steps":"1. Open app\n2. Check availability",
+      "expected_result":"Application is on available. There is no information how to access it."
+    },
+    {
+      "__type__":"TestCase",
+      "title":"Test",
+      "template":1,
+      "type":5,
+      "priority":4,
+      "estimate":"14m 23s",
+      "refs":"",
+      "custom_automation_type":1,
+      "preconditions":"User is logged in as administrator",
+      "steps":"1. Open app\n2. Open Administration\n3. Check permissions",
+      "expected_result":"Administration is available and can be accessed. User has full permissions."
+    }
+  ],
+  "database": {
+    "mysql": {
+      "setup": [
+        "delete from projects;",
+        "delete from suites;",
+        "delete from users where id not in (1);",
+        "delete from roles where id not in (1,2,3,4);"
+      ],
+      "teardown": [
+        "delete from projects;",
+        "delete from suites;",
+        "delete from users where id not in (1);",
+        "delete from roles where id not in (1,2,3,4);"
+      ]
+    },
+    "hosted": {
+      "setup": [
+        "delete from projects;",
+        "delete from suites;",
+        "delete from users where id not in (1);",
+        "delete from roles where id not in (1,2,3,4);"
+      ],
+      "teardown": [
+        "delete from projects;",
+        "delete from suites;",
+        "delete from users where id not in (1);",
+        "delete from roles where id not in (1,2,3,4);"
+      ]
+    },
+    "mssql": {
+      "setup": [
+        "delete from projects;",
+        "delete from suites;",
+        "delete from users where id not in (1);",
+        "delete from roles where id not in (1,2,3,4);"
+      ],
+      "teardown": [
+        "delete from projects;",
+        "delete from suites;",
+        "delete from users where id not in (1);",
+        "delete from roles where id not in (1,2,3,4);"
+      ]
+    }
+  }
+}

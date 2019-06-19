@@ -1,0 +1,26 @@
+{
+    "add_milestone_url": "index.php?/milestones/add/{}",
+    "milestones_overview_url": "index.php?/milestones/overview/{}",
+    "messages": {
+        "msg_success_added_milestone": "Successfully added the new milestone.",
+        "msg_success_deleted_milestone": "Successfully deleted the milestone."
+    },
+    "milestones": [
+        {
+            "name": "First milestone",
+            "description": "This is a description of a milestone."
+        },
+        {
+            "name": "Second milestone",
+            "description": "This is another milestone."
+        },
+        {
+            "name": "Third milestone",
+            "description": "This is yet another milestone."
+        }
+    ],
+    "milestone_with_calendar": {
+        "name": "Milestone with calendar",
+        "description": ""
+    }
+}

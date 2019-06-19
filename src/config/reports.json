@@ -1,0 +1,66 @@
+{
+  "overview_url": "index.php?/reports/overview/",
+  "add_url": "index.php?/reports/add_job/",
+  "edit_url": "index.php?/runs/edit/",
+  "run_view_url": "index.php?/runs/view/",
+  "reports": {
+    "activity_summary": "index.php?/reports/add_job/{}&plugin=cases_activity_summary",
+    "coverage_for_references": "index.php?/reports/add_job/{}&plugin=references_case_coverage",
+    "property_distribution": "index.php?/reports/add_job/{}&plugin=cases_property_groups",
+    "status_tops": "index.php?/reports/add_job/{}&plugin=cases_status_tops"
+  },
+  "messages": {
+    "reports_templates_success_add": "Successfully added the new report/scheduled report.",
+    "reports_templates_success_update": "Successfully updated the API report template."
+  },
+  "errors": {
+    "field_project_id_is_not_valid": "{\"error\":\"Field :project_id is not a valid or accessible project.",
+    "field_project_id_is_not_valid_id": "{\"error\":\"Field :project_id is not a valid ID.",
+    "authentication_failed": "{\"error\":\"Authentication failed: invalid or missing user\\/password or session cookie.",
+    "disabled_api": "{\"error\":\"The API is disabled for your installation. It can be enabled in the administration area in TestRail under Administration > Site Settings > API.",
+    "not_a_valid_report": "{\"error\":\"Field :report_id is not a valid report.",
+    "maximum_number_of_failed_login_attempts": "{\"error\":\"The maximum number of failed login attempts has been reached. Please try again in 10 minutes.",
+    "insufficient_permissions": "{\"error\":\"You are not allowed to add reports (insufficient permissions)."
+  },
+  "template_title": {
+    "activity_summary": "Activity Summary (Cases) %date%",
+    "coverage_for_references": "Coverage for References (Cases) %date%",
+    "property_distribution": "Property Distribution (Cases) %date%",
+    "status_tops": "Status Tops (Cases) %date%"
+  },
+  "report": {
+    "new_name": "Property Distribution New Name"
+  },
+  "database": {
+    "mysql": {
+      "setup": [
+        "delete from reports;",
+        "delete from report_api_templates;",
+        "delete from projects;",
+        "delete from suites;"
+      ],
+      "teardown": [
+      ]
+    },
+    "hosted": {
+      "setup": [
+        "delete from reports;",
+        "delete from report_api_templates;",
+        "delete from projects;",
+        "delete from suites;"
+      ],
+      "teardown": [
+      ]
+    },
+    "mssql": {
+      "setup": [
+        "delete from reports;",
+        "delete from report_api_templates;",
+        "delete from projects;",
+        "delete from suites;"
+      ],
+      "teardown": [
+      ]
+    }
+  }
+}

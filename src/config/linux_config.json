@@ -1,0 +1,6 @@
+{
+  "platform": "linux",
+  "mysql_db_connection": {
+    "username": ""
+  }
+}

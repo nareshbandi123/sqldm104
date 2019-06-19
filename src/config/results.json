@@ -1,0 +1,11 @@
+{
+    "statuses": [
+        "Passed",
+        "Failed",
+        "Retest",
+        "Blocked"
+    ],
+    "text_attachment_description": "Text Document, 79B",
+    "comment": "This is a comment.",
+    "comment_edited": "This is an edited comment."
+}

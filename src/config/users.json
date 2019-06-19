@@ -1,0 +1,223 @@
+{
+  "overview_url": "index.php?/admin/users/overview",
+  "add_user_url": "index.php?/admin/users/add",
+  "add_multiple_users_url": "index.php?/admin/users/add_many",
+  "add_group_url":"index.php?/admin/groups/add",
+  "edit_group_url":"index.php?/admin/groups/edit/",
+  "add_role_url":"index.php?/admin/roles/add",
+  "edit_user_details_url": "index.php?/admin/users/edit/",
+  "messages":
+  {
+    "msg_success_added_user_manual_psw": "Successfully added the new user.",
+    "msg_success_added_user_invitation": "Successfully added the new user and sent an invitation email.",
+    "msg_success_updated_user": "Successfully updated the user.",
+    "msg_success_added_all_users":"Successfully added all users.",
+    "msg_hint_edit_own_profile": "Please note: You are editing your own user account.",
+    "msg_err_cant_delete_last_admin": "Cannot remove the active status because there are no other admins left. You always need at least one active TestRail administrator.",
+    "msg_err_user_validation": "Field Full Name is a required field.\nField Email Address is a required field.",
+    "msg_err_user_email_missing":"Field Email Address is a required field.",
+    "msg_err_user_full_name_missing":"Field Full Name is a required field.",
+    "msg_err_users_validation": "No users to add. Please add at least one new user to the user list.",
+    "msg_err_users_invalid_line_format": "Invalid line format (use: full name, email)",
+    "msg_err_users_invalid_line_format_popup":"Invalid line format (use: full name, email). Please check the user list.",
+    "msg_success_added_group":"Successfully added the new user group.",
+    "msg_success_edited_group":"Successfully updated the user group.",
+    "msg_success_deleted_group": "Successfully deleted the user group.",
+    "msg_success_forget_user": "Successfully forgot the user. All records associated with the original username will use obfuscated version instead."
+  },
+  "add": [{
+    "__type__": "User",
+    "full_name": "Simon Knight",
+    "email_address": "simon.knight@localhost.com",
+    "password": "Testrail123",
+    "last_activity": "Never logged in",
+    "status": "Active",
+    "role": "Lead"
+  }, {
+    "__type__": "User",
+    "full_name": "John Smith",
+    "email_address": "john_smith@localhost.com",
+    "password": "tr123!!",
+    "last_activity": "Never logged in",
+    "status": "Active",
+    "role": "Lead"
+  }, {
+    "__type__": "User",
+    "full_name": "Bart Simpson",
+    "email_address": "bart_simpson@localhost.com",
+    "password": "tr123!!",
+    "last_activity": "Never logged in",
+    "status": "Active",
+    "role": "Lead"
+  }, {
+    "__type__": "User",
+    "full_name": "Homer Simpson",
+    "email_address": "homer@simpson.com",
+    "password": "Testrail123",
+    "last_activity": "Never logged in",
+    "status": "Active",
+    "role": "Lead"
+  }],
+  "add_multiple":
+  {
+    "users":"Multi User1, multi_user1@localhost.com\nMulti User2, multi_user2@localhost.com\nMulti User3, multi_user3@localhost.com",
+    "invalid_users": "Multi User1, multi_user1localhost.com\nMulti User2, multi_user2@localhostcom\nMulti User3 multi_user3@localhost.com",
+    "result": [{
+      "__type__": "User",
+      "full_name": "Multi User1",
+      "email_address": "multi_user1@localhost.com",
+      "password": "tr123!!",
+      "last_activity": "Never logged in",
+      "status": "Active",
+      "role": "Lead"
+    }, {
+      "__type__": "User",
+      "full_name": "Multi User2",
+      "email_address": "multi_user2@localhost.com",
+      "password": "tr123!!",
+      "last_activity": "Never logged in",
+      "status": "Active",
+      "role": "Lead"
+    }, {
+      "__type__": "User",
+      "full_name": "Multi User3",
+      "email_address": "multi_user3@localhost.com",
+      "password": "tr123!!",
+      "last_activity": "Never logged in",
+      "status": "Active",
+      "role": "Lead"
+    }]
+  },
+  "edit":
+  {
+    "__type__": "User",
+    "full_name": "Mary Poppins",
+    "email_address": "mary_poppins@localhost.com",
+    "password": "tr123!!",
+    "last_activity": "Never logged in",
+    "status": "Active",
+    "role": "Lead",
+    "language": "en",
+    "locale": "en-gb",
+    "time_zone": "Europe/London"
+  },
+  "group":
+  {
+    "add_name": "TestRail Group",
+    "edited_group": "Testing Group",
+    "bulk_group_1": "group1",
+    "bulk_group_2": "group2"
+  },
+  "roles":
+  {
+    "messages":{
+      "msg_success_role_added":"Successfully added the new role.",
+      "msg_success_role_edited":"Successfully updated the role.",
+      "msg_success_role_deleted":"Successfully deleted the role."
+    },
+    "new_role": {
+      "__type__": "Role",
+      "name": "New Role",
+      "is_default": 0,
+      "permissions": 258892
+    },
+    "all_permissions": {
+      "__type__": "Role",
+      "name": "All Permissions",
+      "is_default": 0,
+      "permissions": 1048575
+    },
+    "no_permissions": {
+      "__type__": "Role",
+      "name": "No Permissions",
+      "is_default": 0,
+      "permissions": 0
+    },
+    "lead_role": {
+      "__type__": "Role",
+      "name": "Lead",
+      "is_default": 1,
+      "permissions": 786431
+    },
+    "tester_role": {
+      "__type__": "Role",
+      "name": "Advanced Tester",
+      "is_default": 0,
+      "permissions": 0
+    }
+  },
+  "add_admin_user": [{
+    "__type__": "User",
+    "full_name": "Mark Simpson",
+    "email_address": "mark_simpson@localhost.com",
+    "password": "tr123!!",
+    "is_admin": 1,
+    "last_activity": "Never logged in",
+    "status": "Active",
+    "role": "Lead"
+  },{
+    "__type__": "User",
+    "full_name": "Kevin Smith",
+    "email_address": "kevin_smith@localhost.com",
+    "password": "tr123!!",
+    "is_admin": 1,
+    "last_activity": "Never logged in",
+    "status": "Active",
+    "role": "Lead"
+
+  }],
+  "regular_user": {
+    "__type__": "User",
+    "email_address": "tester@example.com",
+    "full_name": "Tester User",
+    "password": "tr123!!"
+  },
+  "tester_user": {
+    "__type__": "User",
+    "email_address": "testeradvanced@example.com",
+    "full_name": "Tester Advanced",
+    "password": "tr123!!"
+  },
+  "lead_user": {
+    "__type__": "User",
+    "email_address": "lead@example.com",
+    "full_name": "Lead User",
+    "password": "tr123!!"
+  },
+  "bulk_edit":{
+    "email_notification":"Off",
+    "locale":"Arabic (Syria)",
+    "time_zone":"(UTC-11:00) Samoa",
+    "language":"English",
+    "sso":"Off",
+    "role":"Tester",
+    "is_administrator":"Yes",
+    "active":"Active"
+  },
+  "database": {
+    "mysql": {
+      "setup": [
+        "delete from users where id not in (1);"
+      ],
+      "teardown": [
+        "delete from users where id not in (1);"
+      ]
+    },
+    "hosted": {
+      "setup": [
+        "delete from users where id not in (1);"
+      ],
+      "teardown": [
+        "delete from users where id not in (1);"
+      ]
+    },
+    "mssql": {
+      "setup": [
+        "delete from users where id not in (1);"
+      ],
+      "teardown": [
+        "delete from users where id not in (1);"
+      ]
+    }
+  }
+}

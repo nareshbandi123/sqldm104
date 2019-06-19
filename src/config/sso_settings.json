@@ -1,0 +1,99 @@
+{
+  "site_settings_url": "index.php?/admin/site_settings",
+  "tabs": {
+    "application": "&tab=1",
+    "email": "&tab=2",
+    "login": "&tab=3",
+    "security": "&tab=4",
+    "updates": "&tab=5",
+    "sessions": "&tab=6",
+    "user_interface": "&tab=7",
+    "api": "&tab=8",
+    "auditing": "&tab=9",
+    "sso": "&tab=10"
+  },
+  "valid_settings": {
+    "entity_id": "index.php?/auth/metadata",
+    "entity_sso_url": "index.php?/auth/redirect_acs"
+  },
+  "valid_settings_hosted": {
+    "app_name": "TestRail - Automation (Hosted)",
+    "idp_issuer_url": "http://www.okta.com/exkparnwsbhirxtMH356",
+    "idp_sso_url": "https://dev-741935.okta.com/app/gurockdev741935_testrailautomationhosted_1/exkparnwsbhirxtMH356/sso/saml",
+    "idp_certificate": "-----BEGIN CERTIFICATE-----\nMIIDpDCCAoygAwIBAgIGAWtCZGhqMA0GCSqGSIb3DQEBCwUAMIGSMQswCQYDVQQGEwJVUzETMBEG\nA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEU\nMBIGA1UECwwLU1NPUHJvdmlkZXIxEzARBgNVBAMMCmRldi03NDE5MzUxHDAaBgkqhkiG9w0BCQEW\nDWluZm9Ab2t0YS5jb20wHhcNMTkwNjEwMTcxNTQ1WhcNMjkwNjEwMTcxNjQ0WjCBkjELMAkGA1UE\nBhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xDTALBgNV\nBAoMBE9rdGExFDASBgNVBAsMC1NTT1Byb3ZpZGVyMRMwEQYDVQQDDApkZXYtNzQxOTM1MRwwGgYJ\nKoZIhvcNAQkBFg1pbmZvQG9rdGEuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA\npZkCoXPuomFVOE+xqkEaMfu+MJczyt1gwgvTtz75qH/p3yIjghqVzYijinUyEXPvbIzGcVxjxYup\nNHvqFHx6xwdasy0qFvc4r/42bd0r+xgF75xnBX/RXLGjQoId7mzhicjqaAl6cZnAxSUs9teM9T7P\nhdusxiHrH8pMx6f+ekwXXxKImj/PWe2FLS+h3aUYsmjgvbxMQ7f/TiDtgKfi7BxEA92p3ORGOXl6\n3iazykeCGIFbxv80oJzJmU0pORg0+DcrALVm2L/La2QfliKUlj5PbjxNT1E6uRUTEbfFW7O+lhPM\n20336EYcbEKmxZhVSpY81Ym6odfXlkNHPN93zQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAAJSpW\nQqiksLZIOvZp2rteOQ4Z9GIPKqStlXVza9sVbTjzC1uxmQncu0evWviJgfI/yJboSeK0ADCSrSsm\n72LoDtNgUSmW1eTEqQdbvT6Rt+6YYWS4w7UdDYgkIFHqINSKWNRv9ghU5gY9Vi3XG6gXfA4prXPz\nFKlMc+AZsKh058nyhNgbMhcKaHz4jLireFQY+kLUyv1i7V0N5/HMrDlTSHrFQQzQZ1sLjfWAoQv9\nMgs9BXdVwrdfJktt3/lJSWKE1U+VZ+9V0FkLmdfrPJl6apFdX828ENUQvJXu374ORLIMh7nMPr8i\n2mtrhmy0pd+w1CTC0cofRlc2AcFfthRo\n-----END CERTIFICATE-----",
+    "certificate_file_path": "okta.cert"
+  },
+  "valid_settings_windows": {
+    "app_name": "Testrail - Automation (Windows)",
+    "idp_issuer_url": "http://www.okta.com/exkpaxae2jxYlMAcT356",
+    "idp_sso_url": "https://dev-741935.okta.com/app/gurockdev741935_testrailautomationwindows_1/exkpaxae2jxYlMAcT356/sso/saml",
+    "idp_certificate": "-----BEGIN CERTIFICATE-----\nMIIDpDCCAoygAwIBAgIGAWtCZGhqMA0GCSqGSIb3DQEBCwUAMIGSMQswCQYDVQQGEwJVUzETMBEG\nA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEU\nMBIGA1UECwwLU1NPUHJvdmlkZXIxEzARBgNVBAMMCmRldi03NDE5MzUxHDAaBgkqhkiG9w0BCQEW\nDWluZm9Ab2t0YS5jb20wHhcNMTkwNjEwMTcxNTQ1WhcNMjkwNjEwMTcxNjQ0WjCBkjELMAkGA1UE\nBhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xDTALBgNV\nBAoMBE9rdGExFDASBgNVBAsMC1NTT1Byb3ZpZGVyMRMwEQYDVQQDDApkZXYtNzQxOTM1MRwwGgYJ\nKoZIhvcNAQkBFg1pbmZvQG9rdGEuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA\npZkCoXPuomFVOE+xqkEaMfu+MJczyt1gwgvTtz75qH/p3yIjghqVzYijinUyEXPvbIzGcVxjxYup\nNHvqFHx6xwdasy0qFvc4r/42bd0r+xgF75xnBX/RXLGjQoId7mzhicjqaAl6cZnAxSUs9teM9T7P\nhdusxiHrH8pMx6f+ekwXXxKImj/PWe2FLS+h3aUYsmjgvbxMQ7f/TiDtgKfi7BxEA92p3ORGOXl6\n3iazykeCGIFbxv80oJzJmU0pORg0+DcrALVm2L/La2QfliKUlj5PbjxNT1E6uRUTEbfFW7O+lhPM\n20336EYcbEKmxZhVSpY81Ym6odfXlkNHPN93zQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAAJSpW\nQqiksLZIOvZp2rteOQ4Z9GIPKqStlXVza9sVbTjzC1uxmQncu0evWviJgfI/yJboSeK0ADCSrSsm\n72LoDtNgUSmW1eTEqQdbvT6Rt+6YYWS4w7UdDYgkIFHqINSKWNRv9ghU5gY9Vi3XG6gXfA4prXPz\nFKlMc+AZsKh058nyhNgbMhcKaHz4jLireFQY+kLUyv1i7V0N5/HMrDlTSHrFQQzQZ1sLjfWAoQv9\nMgs9BXdVwrdfJktt3/lJSWKE1U+VZ+9V0FkLmdfrPJl6apFdX828ENUQvJXu374ORLIMh7nMPr8i\n2mtrhmy0pd+w1CTC0cofRlc2AcFfthRo\n-----END CERTIFICATE-----",
+    "certificate_file_path": "okta.cert"
+  },
+  "valid_settings_linux": {
+    "app_name": "Testrail - Automation (Linux)",
+    "idp_issuer_url": "http://www.okta.com/exkpaw6ddrhHOUHWH356",
+    "idp_sso_url": "https://dev-741935.okta.com/app/gurockdev741935_testrailautomationlinux_1/exkpaw6ddrhHOUHWH356/sso/saml",
+    "idp_certificate": "-----BEGIN CERTIFICATE-----\nMIIDpDCCAoygAwIBAgIGAWtCZGhqMA0GCSqGSIb3DQEBCwUAMIGSMQswCQYDVQQGEwJVUzETMBEG\nA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEU\nMBIGA1UECwwLU1NPUHJvdmlkZXIxEzARBgNVBAMMCmRldi03NDE5MzUxHDAaBgkqhkiG9w0BCQEW\nDWluZm9Ab2t0YS5jb20wHhcNMTkwNjEwMTcxNTQ1WhcNMjkwNjEwMTcxNjQ0WjCBkjELMAkGA1UE\nBhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xDTALBgNV\nBAoMBE9rdGExFDASBgNVBAsMC1NTT1Byb3ZpZGVyMRMwEQYDVQQDDApkZXYtNzQxOTM1MRwwGgYJ\nKoZIhvcNAQkBFg1pbmZvQG9rdGEuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA\npZkCoXPuomFVOE+xqkEaMfu+MJczyt1gwgvTtz75qH/p3yIjghqVzYijinUyEXPvbIzGcVxjxYup\nNHvqFHx6xwdasy0qFvc4r/42bd0r+xgF75xnBX/RXLGjQoId7mzhicjqaAl6cZnAxSUs9teM9T7P\nhdusxiHrH8pMx6f+ekwXXxKImj/PWe2FLS+h3aUYsmjgvbxMQ7f/TiDtgKfi7BxEA92p3ORGOXl6\n3iazykeCGIFbxv80oJzJmU0pORg0+DcrALVm2L/La2QfliKUlj5PbjxNT1E6uRUTEbfFW7O+lhPM\n20336EYcbEKmxZhVSpY81Ym6odfXlkNHPN93zQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAAJSpW\nQqiksLZIOvZp2rteOQ4Z9GIPKqStlXVza9sVbTjzC1uxmQncu0evWviJgfI/yJboSeK0ADCSrSsm\n72LoDtNgUSmW1eTEqQdbvT6Rt+6YYWS4w7UdDYgkIFHqINSKWNRv9ghU5gY9Vi3XG6gXfA4prXPz\nFKlMc+AZsKh058nyhNgbMhcKaHz4jLireFQY+kLUyv1i7V0N5/HMrDlTSHrFQQzQZ1sLjfWAoQv9\nMgs9BXdVwrdfJktt3/lJSWKE1U+VZ+9V0FkLmdfrPJl6apFdX828ENUQvJXu374ORLIMh7nMPr8i\n2mtrhmy0pd+w1CTC0cofRlc2AcFfthRo\n-----END CERTIFICATE-----",
+    "certificate_file_path": "okta.cert"
+  },
+  "invalid_settings": {
+    "invalid_idp_issuer_url": "invalid url",
+    "invalid_idp_sso_url": "invalid url",
+    "invalid_idp_certificate": "Sample Certificate",
+    "certificate_file_path": "okta.txt"
+  },
+  "messages": {
+    "error_idp_sso_url_required": "Field IDP SSO URL is a required field.",
+    "error_idp_issuer_url_required": "Field IDP Issuer URL is a required field.",
+    "error_certificate_required": "Field IDP Certificate is a required field.",
+    "error_certificate_invalid": "The certificate could not be validated.",
+    "error_invalid_certificate_uploaded": "Please upload a valid certificate file.",
+    "success_test_connection": "Successfully tested SSO settings.",
+    "success_updated_site_settings": "Successfully updated site settings."
+  },
+  "database": {
+    "mysql": {
+      "setup": [
+        "delete from sso_settings where id = 1;",
+        "insert into sso_settings values (1,'saml', '', '', '', '', '');",
+        "update settings set value=0 where name='create_account_on_first_login';",
+        "update settings set value=0 where name='is_fallback_enabled';"
+      ],
+      "teardown": [
+        "delete from sso_settings where id = 1;",
+        "insert into sso_settings values (1,'saml', '', '', '', '', '');",
+        "update settings set value=0 where name='create_account_on_first_login';",
+        "update settings set value=0 where name='is_fallback_enabled';"
+      ]
+    },
+    "hosted": {
+      "setup": [
+        "delete from sso_settings where id = 1;",
+        "insert into sso_settings values (1,'saml', '', '', '', '', '');",
+        "update settings set value=0 where name='create_account_on_first_login';",
+        "update settings set value=0 where name='is_fallback_enabled';"
+      ],
+      "teardown": [
+        "delete from sso_settings where id = 1;",
+        "insert into sso_settings values (1,'saml', '', '', '', '', '');",
+        "update settings set value=0 where name='create_account_on_first_login';",
+        "update settings set value=0 where name='is_fallback_enabled';"
+      ]
+    },
+    "mssql": {
+      "setup": [
+        "delete from sso_settings where id = 1;",
+        "SET IDENTITY_INSERT sso_settings ON;",
+        "insert into sso_settings (id, sso_integration_name, testrail_entity_id, sso_url, idp_sso_url, idp_issuer_url, ssl_certificate) values (1,'saml', '', '', '', '', '');",
+        "update settings set value=0 where name='create_account_on_first_login';"
+      ],
+      "teardown": [
+        "delete from sso_settings where id = 1;",
+        "SET IDENTITY_INSERT sso_settings ON;",
+        "insert into sso_settings (id, sso_integration_name, testrail_entity_id, sso_url, idp_sso_url, idp_issuer_url, ssl_certificate) values (1,'saml', '', '', '', '', '');",
+        "update settings set value=0 where name='create_account_on_first_login';"
+      ]
+    }
+  }
+}

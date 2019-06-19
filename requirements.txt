@@ -1,0 +1,8 @@
+pytest
+pytest-ordering
+pytest-dependency
+python-dateutil
+selenium
+requests
+pyodbc
+PyMySQL

@@ -1,0 +1,6 @@
+{
+  "platform": "linux",
+  "mssql_db_connection": {
+    "username": "testrail"
+  }
+}

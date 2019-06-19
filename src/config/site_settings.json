@@ -1,0 +1,19 @@
+{
+  "site_settings_url": "index.php?/admin/site_settings",
+  "tabs": {
+    "backups": "&tab=11"
+  },
+  "regular_user": {
+    "__type__": "User",
+    "email_address": "regular@example.com",
+    "full_name": "Regular User",
+    "password": "testtest"
+  },
+  "messages": {
+    "banner_message": "Restore requested. Cancel restoration?",
+    "confirm_message": "restore backup",
+    "frozen_message": "TestRail has been frozen pending a database restoration. Please try back later or contact an administrator.",
+    "no_backups_message": "There are no backups",
+    "cant_login_message": "Email/Login or Password is incorrect. Please try again."
+  }
+}

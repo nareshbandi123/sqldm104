@@ -1,0 +1,35 @@
+{
+  "integration_url": "index.php?/admin/integration",
+  "messages":{
+    "success_updated_integration_settings":"Successfully updated integration settings."
+  },
+  "youtrack":
+  {
+    "__type__":"Plugin",
+    "plugin_name":"YouTrack20184",
+    "defect_view_url": "https://jacobtestrail.myjetbrains.com/youtrack/issue/%id%",
+    "defect_add_url": "https://jacobtestrail.myjetbrains.com/youtrack/newIssue?",
+    "defect_plugin":"; Please configure your YouTrack connection below\n[connection]\naddress=https://jacobtestrail.myjetbrains.com/youtrack/\nuser=%youtrack_user%\npassword=%youtrack_psw%",
+    "user_variable_username":{
+      "__type__":"UserVariable",
+      "user_label":"YouTrack Username",
+      "user_description":"YouTrack plugin username description",
+      "user_system_name":"youtrack_user",
+      "user_type": "String",
+      "user_fallback":"sabina.mlinaric@idera.com"
+    },
+    "user_variable_password":{
+      "__type__":"UserVariable",
+      "user_label":"YouTrack Password",
+      "user_description":"YouTrack plugin password description",
+      "user_system_name":"youtrack_psw",
+      "user_type": "Password",
+      "user_fallback":"TestRail123!!"
+    }
+  },
+  "jira": {
+    "address": "https://gurock.atlassian.net/",
+    "user": "sabina.mlinaric@idera.com",
+    "password": "INNBOX2726015995"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "overview_url": "index.php?/admin/projects/overview",
+  "add_project_url": "index.php?/admin/projects/add",
+  "project_overview_url":"index.php?/projects/overview/",
+  "edit_project_url":"index.php?/admin/projects/edit/",
+  "messages":{
+    "msg_successfully_added_project": "Successfully added the new project.",
+    "msg_successfully_edited_project": "Successfully updated the project.",
+    "msg_success_created_first_project":"Congratulations! You have created your first project",
+    "msg_success_deleted_project":"Successfully deleted the project."
+  },
+  "add":
+  {
+    "single_suite_name":"Project - Single Suite",
+    "baseline_suite_name":"Project - Baseline Suite",
+    "multi_suite_name": "Project - Multi Suite",
+    "edited_project_name": "Project - Edited",
+    "announcement": "Announcement",
+    "case_name": "New Case"
+  },
+  "project_info": {
+    "project_name":"Main Project",
+    "project_name_edited":"Main Project Edited"
+  },
+  "suites":{
+    "overview_url":"index.php?/suites/overview/",
+    "view_url":"index.php?/suites/view/",
+    "add_url":"index.php?/suites/add/",
+    "edit_url":"",
+    "add_column_type": "Automation Type",
+    "second_add_column_type": "Created By",
+    "suite_name_for_section": "Suite For Section",
+    "messages":{
+      "no_suite_title":"This project doesn't contain any test suites, yet.",
+      "no_cases_in_suite_title":"This test suite doesn't contain any test cases, yet.",
+      "msg_success_added_suite":"Successfully added the new test suite. Add another",
+      "msg_success_edited_suite":"Successfully updated the test suite.",
+      "msg_success_deleted_suite":"Successfully deleted the test suite."
+    },
+    "add":[{
+      "name":"Suite Name",
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim, nunc sit amet venenatis bibendum, est augue cursus dui, ac lacinia massa augue id diam. Donec volutpat rutrum laoreet. Cras ac rutrum odio, vitae fermentum est. Etiam eget placerat sapien, et semper odio. Suspendisse ultricies risus non libero feugiat aliquam."
+    },{
+      "name":"Second Suite",
+      "description": "Suspendisse potenti. Quisque quis sapien hendrerit, consequat elit id, molestie metus. Quisque mattis nunc a mollis rhoncus. Phasellus vel vulputate purus, vel suscipit erat. Nunc viverra facilisis justo. Cras quis neque hendrerit, dapibus mi at, feugiat elit. Donec vitae accumsan sapien, eget tempor neque."
+    }],
+    "edit":{
+      "name":"Temporary Suite",
+      "description":"Suspendisse ultricies risus non libero feugiat aliquam.",
+      "edited_name":"Edited",
+      "edited_description":"Suspendisse ultricies risus non libero feugiat aliquam. - Edited description"
+    }
+  },
+  "sections":{
+    "first_section": "First Section",
+    "second_section": "Second Section",
+    "renamed_section": "Renamed Section",
+    "deleted_section": "Deleted Section",
+    "deleted_section_description": "Still a description",
+    "section_name":"Second Section",
+    "section_description":"Section description",
+    "subsection_name":"Subsection",
+    "subsection_description":"Subsection description",
+    "edited_section": "Edited Section"
+  },
+  "test_run":{
+    "edited_name": "Edited name"
+  },
+  "database": {
+    "mysql": {
+      "setup": [
+        "delete from projects",
+        "delete from suites;"
+      ],
+      "teardown": [
+        "delete from projects",
+        "delete from suites;"
+      ]
+    },
+    "hosted": {
+      "setup": [
+        "delete from projects",
+        "delete from suites;"
+      ],
+      "teardown": [
+        "delete from projects",
+        "delete from suites;"
+      ]
+    },
+    "mssql": {
+      "setup": [
+        "delete from projects",
+        "delete from suites;"
+      ],
+      "teardown": [
+        "delete from projects",
+        "delete from suites;"
+      ]
+    }
+  }
+}

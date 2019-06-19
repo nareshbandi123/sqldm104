@@ -1,0 +1,18 @@
+{
+  "errors": {
+    "field_case_id_not_valid": "{\"error\":\"Field :case_id is not a valid test case.",
+    "field_test_id_not_valid": "{\"error\":\"Field :test_id is not a valid test.",
+    "field_attachment_id_not_valid": "{\"error\":\"Field :attachment_id is not a valid ID.",
+    "field_attachment_id_not_valid_attachment": "{\"error\":\"Field :attachment_id is not a valid attachment.",
+    "restricted_to_upload_malicious_file": "It is restricted to upload malicious file",
+    "assignedto_is_not_valid_user": "Field :assignedto_id is not a valid user",
+    "authentication_failed": "{\"error\":\"Authentication failed: invalid or missing user\\/password or session cookie.",
+    "authentication_failed_msg": "Authentication failed: invalid or missing user/password or session cookie.",
+    "insufficient_permissions_msg": "You are not allowed to edit test plans (insufficient permissions).",
+    "maximum_number_of_failed_login_attempts_has_been_reached": "{\"error\":\"The maximum number of failed login attempts has been reached. Please try again in 10 minutes."
+  },
+  "attachment_content": {
+    "case1": "[{\"name\": \"logo.png\", \"size\": 2130, \"user_id\": null}]",
+    "case2": "[{\"name\": \"logo.png\", \"size\": 2130, \"user_id\": null}, {\"name\": \"file.txt\", \"size\": 21, \"user_id\": null}]"
+  }
+}

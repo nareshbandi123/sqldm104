@@ -1,0 +1,91 @@
+{
+	"login_url": "index.php?/auth/login",
+	"dashboard_url": "index.php?/dashboard",
+	"my_settings_url": "index.php?/mysettings",
+	"api_url": "index.php?/api/v2/",
+	"idp_url": "https://dev-741935-admin.okta.com",
+	"login": {
+		"username": "sabina.mlinaric@idera.com",
+		"full_name": "Sabina Mlinarič",
+		"password": "Testrail123",
+		"sso_password": "Testrail123",
+		"false_username": "sm@localhost.com",
+		"false_password": "tr321!!",
+		"messages": {
+			"err_missing_login_data": "Field Email/User is a required field.\nField Password is a required field.",
+			"err_missing_psw": "Password is required.",
+			"err_missing_email": "Email/Login is required.",
+			"err_false_credentials": "Email/Login or Password is incorrect. Please try again.",
+			"err_invalid_email": "Is not a valid email address.",
+			"err_invalid_password": "Is not a valid password.",
+			"err_fallback_disabled": "This type of login is disabled for you. Please login using SSO.",
+			"err_sso_disabled": "SSO login is disabled for you. Please login using TestRail credentials.",
+			"err_sso_sign_in_failed": "Sign in failed!"
+		}
+	},
+	"report": {
+		"server_name": "https://gurock.testrail.com/",
+		"project": "TestRail",
+		"username": "automation@gurock.io",
+		"password": "Automation123!!!"
+	},
+	"forgot_password": {
+		"url": "index.php?/auth/forgot_password",
+		"invalid_email": "smlinaricranorex.com",
+		"messages": {
+			"email_sent_successfully": "Email sent successfully. Please check your email inbox for the reset password instructions.",
+			"err_missing_email": "Email Address is required.",
+			"err_email_not_valid": "Email Address is not valid.",
+			"err_email_not_existing": "Unknown email address.",
+			"err_forgot_pwd_disabled": "Forgot Password is disabled for your TestRail account. Please contact your administrator."
+		}
+	},
+	"servers": {
+		"default": "linux",
+		"windows": {
+			"server_name": "http://ec2-18-212-186-126.compute-1.amazonaws.com/testrail/",
+			"database_connection": "mssql"
+		},
+		"linux": {
+			"server_name": "http://ec2-18-206-138-66.compute-1.amazonaws.com/testrail/",
+			"database_connection": "mysql"
+		},
+		"hosted": {
+			"server_name": "https://automation2.testrail-staging.com/",
+			"database_connection": "hosted"
+		},
+		"local": {
+			"server_name": "",
+			"database_connection": "local"
+		}
+	},
+	"database_connection": {
+		"mysql": {
+			"host": "ec2-18-206-138-66.compute-1.amazonaws.com",
+			"port": 3306,
+			"user": "testrail",
+			"password": "tr123!!",
+			"database": "testrail"
+		},
+		"mssql": {
+			"host": "ec2-18-212-186-126.compute-1.amazonaws.com",
+			"user": "testrail",
+			"password": "tr123!!",
+			"database": "testrail"
+		},
+		"hosted": {
+			"host": "staging-testrail-data-rds.c6xqywhzdx3n.us-east-1.rds.amazonaws.com",
+			"port": 3306,
+			"user": "sqluser",
+			"password": "FlIasUtVuffaylmyuthyacDab",
+			"database": "testrail-347"
+		},
+		"local": {
+			"host": "",
+			"port": 3306,
+			"user": "",
+			"password": "",
+			"database": "testrail"
+		}
+	}
+}

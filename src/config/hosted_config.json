@@ -1,0 +1,10 @@
+{
+  "testrail": "cloud",
+  "platform": "linux",
+  "mysql_db_connection": {
+    "username": "testrail",
+    "password": "tr123!!",
+    "database": "localhost"
+  },
+  "server_name":"https://gurock.testrail.com/"
+}

@@ -1,0 +1,50 @@
+{
+  "overview_url":"index.php?/runs/overview/",
+  "view_url":"index.php?/plans/view/",
+  "add_url":"index.php?/plans/add/",
+  "edit_url":"index.php?/plans/edit/",
+  "run_view_url": "index.php?/runs/view/{}",
+  "run_edit_url": "index.php?/runs/edit/{}",
+  "messages":{
+    "msg_success_added_plan":"Successfully added the new test plan.",
+    "msg_success_edited_plan":"Successfully updated the test plan and the related test runs.",
+    "msg_success_deleted_plan":"Successfully deleted the test plan and the related test runs.",
+    "msg_edit_not_allowed": "This operation is not allowed. The test plan is already completed.",
+    "msg_run_completed": "This test run is completed. You can no longer modify this test run or add new test results."
+
+  },
+  "plans":[
+    {
+      "name":"Test plan",
+      "description":"Adding this test plan for testing test plan"
+    },
+    {
+      "name":"Second Test plan",
+      "description":"Another test plan description"
+    },
+    {
+      "name": "Third Test Plan",
+      "description": "Yet another description"
+    }
+  ],
+  "add": {
+    "user_full_name": "A User",
+    "user_email_address": "user@users.com",
+    "user_password": "TestingTesting123",
+    "run_names": [
+      "Test run 1", "Test run 2", "Test run 3"
+    ],
+    "configuration_group": "Browser",
+    "configuration_options": [
+      "Safari", "IE", "Firefox", "Chrome"
+    ],
+    "configuration_selected_options": [
+      "Safari", "Firefox"
+    ],
+    "configuration_alternate_options": [
+      "IE", "Chrome"
+    ],
+    "run_description_1": "This is a description of a test run.",
+    "run_description_2": "This is another description of a different test run."
+  }
+}

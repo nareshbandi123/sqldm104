@@ -1,0 +1,66 @@
+{
+  "overview_url":"index.php?/runs/overview/",
+  "add_url":"index.php?/runs/add/",
+  "edit_url": "index.php?/runs/edit/",
+  "run_view_url": "index.php?/runs/view/",
+  "runs":[
+    {
+      "name": "Test Run",
+      "description":"This is to test Test Run"
+    },
+    {
+      "name": "Another Test Run",
+      "description": "This is another description",
+      "milestone": "First milestone",
+      "assigned_to": "Sabina Mlinarič"
+    },
+    {
+      "name": "Third Test Run",
+      "description": "With a third description"
+    }
+  ],
+  "messages":{
+    "msg_success_added_test_run":"Successfully added the new test run.",
+    "msg_success_edited_test_run":"Successfully updated the test run.",
+    "msg_success_closed_test_run": "Successfully closed the test run.",
+    "msg_success_deleted_test_run": "Successfully deleted the test run.",
+    "msg_edit_not_allowed": "This operation is not allowed. The test run is already completed."
+  },
+  "add": {
+    "user_full_name": "A User",
+    "user_email_address": "user@users.com",
+    "user_password": "TestingTesting123",
+    "add_column_type": "Automation Type",
+    "second_add_column_type": "Case ID"
+  },
+  "test_results":{
+    "add":[{
+        "__type__": "TestResult",
+        "status":"Passed",
+        "comment":"Verified and fixed.",
+        "assigned_to": "Me"
+      },
+      {
+        "__type__": "TestResult",
+        "status":"Retest",
+        "comment":"Potential issues after fix. Please recheck.",
+        "assigned_to": "Nobody (Unassigned)",
+        "version":"v1.0",
+        "elapsed":"2m",
+        "defects":"TR-312"
+      }],
+    "edit":[{
+        "__type__": "TestResult",
+        "status":"Failed",
+        "comment":"Failed. Please fix.",
+        "assigned_to": "Nobody (Unassigned)"
+      },
+      {
+        "__type__": "TestResult",
+        "comment":"Edited comment",
+        "version":"v1.1",
+        "elapsed":"3m 12s",
+        "defects":"TR-367"
+      }]
+  }
+}

@@ -1,0 +1,119 @@
+{
+    "add_case_type_url": "index.php?/admin/case_types/add",
+    "overview_url": "index.php?/admin/custom/overview",
+    "add_custom_field_url": "index.php?/admin/fields/add/1/",
+    "add_result_field_url": "index.php?/admin/fields/add/2",
+    "add_priority_url": "index.php?/admin/priorities/add",
+    "add_ui_script_url": "index.php?/admin/uiscripts/add",
+    "add_template_url":"index.php?/admin/templates/add",
+    "edit_system_status_passed_url": "index.php?/admin/statuses/edit/1",
+    "edit_unnamed_status_url": "index.php?/admin/statuses/edit/6",
+    "messages": {
+        "msg_successfully_added_case_type": "Successfully added the new case type.",
+        "msg_case_type_missing_name": "Field Name is a required field.",
+        "msg_case_type_updated": "Successfully updated the case type.",
+        "msg_case_type_deleted": "Successfully deleted the case type.",
+        "msg_custom_field_missing_fields": "Field Label is a required field.\nField System Name is a required field.",
+        "msg_custom_field_added": "Successfully added the new custom field.",
+        "msg_custom_field_deleted": "Successfully deleted the custom field (or scheduled for deletion).",
+        "msg_custom_field_edited": "Successfully updated the field.",
+        "msg_priority_missing_field": "Field Name is a required field.",
+        "msg_priority_added": "Successfully added the new priority.",
+        "msg_priority_deleted": "Successfully deleted the priority.",
+        "msg_priority_edited": "Successfully updated the priority.",
+        "msg_ui_script_added": "Successfully added the new UI script.",
+        "msg_ui_script_edited": "Successfully updated the UI script.",
+        "msg_ui_script_deleted": "Successfully deleted the UI script.",
+        "msg_status_edited": "Successfully updated the status.",
+        "msg_template_created": "Successfully added the new template.",
+        "msg_template_updated": "Successfully updated the template.",
+        "msg_template_deleted": "Successfully deleted the template."
+    },
+    "add": {
+        "new_case_type_name": "New Case Type",
+        "edit_case_type_name": "Edited Case Type",
+        "new_priority_name": "New Priority",
+        "new_priority_abbreviation": "ABBR",
+        "edit_priority_name": "Edited Priority",
+        "edit_priority_abbreviation": "RBBA",
+        "new_ui_script_name": "Test Script",
+        "edit_ui_script_name": "Edit Script",
+        "new_template_name": "New Template",
+        "edited_template_name": "Edited Template"
+    },
+    "custom_field": {
+        "label": "Custom Field Label",
+        "description": "Some description\nwith a newline",
+        "system_name": "yourock",
+        "edited_label": "Edited Label",
+        "edited_description": "A new description",
+        "edited_type": "Checkbox"
+    },
+    "status": {
+        "label": "Unnamed 1",
+        "name": "custom_status1",
+        "color_dark": "000000",
+        "color_medium": "a0a0a0",
+        "color_bright": "d0d0d0",
+        "is_final": false,
+        "is_active": false,
+        "edit_label": "Test Status",
+        "edit_name": "test_status",
+        "edit_color_dark": "010101",
+        "edit_color_medium": "b5b5b5",
+        "edit_color_bright": "d1e2c3",
+        "edit_is_final": true,
+        "edit_is_active": true
+    },
+    "database": {
+        "mysql": {
+            "setup": [
+                "delete from templates where id>3;",
+                "delete from case_types where id>12;",
+                "delete from priorities where id>4;",
+                "update statuses set name='custom_status1', system_name='custom_status1', label='Unnamed 1',color_dark=0,color_medium=10526880,color_bright=13684944,display_order=6,is_system=0,is_active=0,is_untested=0,is_final=0 where id=6",
+                "delete from uiscripts;"
+
+            ],
+            "teardown": [
+                "delete from templates where id>3;",
+                "delete from case_types where id>12;",
+                "delete from priorities where id>4;",
+                "update statuses set name='custom_status1', system_name='custom_status1', label='Unnamed 1',color_dark=0,color_medium=10526880,color_bright=13684944,display_order=6,is_system=0,is_active=0,is_untested=0,is_final=0 where id=6",
+                "delete from uiscripts;"
+            ]
+        },
+        "hosted": {
+            "setup": [
+                "delete from templates where id>3;",
+                "delete from case_types where id>12;",
+                "delete from priorities where id>4;",
+                "update statuses set name='custom_status1', system_name='custom_status1', label='Unnamed 1',color_dark=0,color_medium=10526880,color_bright=13684944,display_order=6,is_system=0,is_active=0,is_untested=0,is_final=0 where id=6",
+                "delete from uiscripts;"
+            ],
+            "teardown": [
+                "delete from templates where id>3;",
+                "delete from case_types where id>12;",
+                "delete from priorities where id>4;",
+                "update statuses set name='custom_status1', system_name='custom_status1', label='Unnamed 1',color_dark=0,color_medium=10526880,color_bright=13684944,display_order=6,is_system=0,is_active=0,is_untested=0,is_final=0 where id=6",
+                "delete from uiscripts;"
+            ]
+        },
+        "mssql": {
+            "setup": [
+                "delete from templates where id>3;",
+                "delete from case_types where id>12;",
+                "delete from priorities where id>4;",
+                "update statuses set name='custom_status1', system_name='custom_status1', label='Unnamed 1',color_dark=0,color_medium=10526880,color_bright=13684944,display_order=6,is_system=0,is_active=0,is_untested=0,is_final=0 where id=6",
+                "delete from uiscripts;"
+            ],
+            "teardown": [
+                "delete from templates where id>3;",
+                "delete from case_types where id>12;",
+                "delete from priorities where id>4;",
+                "update statuses set name='custom_status1', system_name='custom_status1', label='Unnamed 1',color_dark=0,color_medium=10526880,color_bright=13684944,display_order=6,is_system=0,is_active=0,is_untested=0,is_final=0 where id=6",
+                "delete from uiscripts;"
+            ]
+        }
+    }
+}

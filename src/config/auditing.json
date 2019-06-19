@@ -1,0 +1,64 @@
+{
+  "license_url": "index.php?/admin/license",
+  "licenses": {
+    "standard": "NUOD9Rd3TfqG2vfsoipQ3pVsOl1sDif/D8nLLwX+N/hKSxpJUWDT3u/6Qwqs\nFnufwReRT71VFew28WGXJjiDZD11hMQzFZuklzSk07xvkg9E0ZKqUcUfNhsn\n45ZE7yC9ble0f7XALHgHsgREDr2HQnkr1xuVSm3xhYhwO+8OTRi6l6L+dmkc\nFJUeyipjGIBF1g+NuuL7bCvyEABuAcMTellXN4DroFDt9OaEQzLxAIdDdROB\n2lpJe7jrRQOgqf4ik2+1WWfUwWwvRtQWS7Sj1w==",
+    "regular": "CB/OYbInKI6OK/8tICz3re+an9Q1T3rlVrTFX3rVFIzRVMReR29wgo7Z3MlX\n4PXd9obHHHsU2PXTLJdPQf6n1OXmI301Tn2FIqPtEQThh3eSsdqJJhTqPiY4\nScOZCiNUAikwZ3NgZL7g13Za/MwmrTwp8e5NhrPCStMqp4G36XblU1LKTKk/\nhz257wzXKngXlQkKQdIyJYebEHryPdenfrZpTqDCKrH9ytkm2oigjrbltneL\niuaOuhPPdsGq2ywHfQMlGFQIMHAZ1J4/KP6OZBf7gOsaHj76yPkmSXdQZbw= ",
+    "enterprise": "9DCP656Gfb8aAhMWGerBdPMwmxlgJKugSDq8pzoI+N69kZc9POmnixNUKryE\nSTkBlE03IjEwYn71dZH3RKVzBxqhGTwj1GMVGHJ8KKnI8XYKGvdfZuovBF+C\nAnJW7hKfBxih7IGt8fOMkoY4cCogtObr1opLqesNFeQVZoUqsTycO1yaFaT2\n+WFQ6PkNn2pLzWY5Rbrcrjhhm12vv5VOEA7WrBPP4iMF/Wdnk7Kwi3obV1iW\nd2z6NqTewhw6uqY60dG7bIcmEIZid91RvgCTuyXvsRTLoYxfvFmWxwMcCDM="
+  },
+  "messages": {
+    "successfully_updated_license_message": "Successfully updated your TestRail license key.",
+    "invalid_license_message": "Invalid license key format.",
+    "invalid_custom_audit_record_volume_entered": "Invalid volume entered.",
+    "invalid_custom_retention_period_entered": "Invalid retention period entered."
+  },
+  "regular_user": {
+    "__type__": "User",
+    "email_address": "regular@example.com",
+    "full_name": "Regular User",
+    "password": "testtest"
+  },
+  "database": {
+    "mysql": {
+      "setup": [
+        "delete from settings where name = 'audit_level';",
+        "delete from settings where name = 'audit_number_of_days';",
+        "delete from settings where name = 'audit_number_of_records';",
+        "delete from settings where name = 'audit_rows_per_page';",
+        "delete from user_filters where 1=1;",
+        "delete from projects where 1=1;",
+        "delete from suites where 1=1;"
+      ],
+      "teardown": [
+      ],
+      "dump_file": "../sql/auditing_log.sql"
+    },
+    "hosted": {
+      "setup": [
+        "delete from settings where name = 'audit_level';",
+        "delete from settings where name = 'audit_number_of_days';",
+        "delete from settings where name = 'audit_number_of_records';",
+        "delete from settings where name = 'audit_rows_per_page';",
+        "delete from user_filters where 1=1;",
+        "delete from projects where 1=1;",
+        "delete from suites where 1=1;"
+      ],
+      "teardown": [
+      ],
+      "dump_file": "../sql/auditing_log.sql"
+    },
+    "mssql": {
+      "setup": [
+        "delete from settings where name = 'audit_level';",
+        "delete from settings where name = 'audit_number_of_days';",
+        "delete from settings where name = 'audit_number_of_records';",
+        "delete from settings where name = 'audit_rows_per_page';",
+        "delete from user_filters where 1=1;",
+        "delete from projects where 1=1;",
+        "delete from suites where 1=1;"
+      ],
+      "teardown": [
+      ],
+      "dump_file": "../sql/auditing_log.sql"
+    }
+  }
+}

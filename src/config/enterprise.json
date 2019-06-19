@@ -1,0 +1,62 @@
+{
+  "version": "enterprise",
+  "urls": {
+    "admin_overview_url": "index.php?/admin/overview",
+    "subscription_url": "index.php?/admin/subscription"
+  },
+  "messages": {
+    "enterprise_trial": {
+      "banner_header": "TestRail Enterprise Cloud Trial",
+      "banner_body": "Please contact us to convert from a trial to a paid subscription plan, or if you would like to switch from Enterprise to Classic TestRail.",
+      "support_link": "https://secure.gurock.com/customers/support/",
+      "overview": {
+        "banner_header": "Your TestRail Enterprise Cloud trial",
+        "banner_body": "You can contact us to convert your enterprise trial to a paid subscription plan. If you prefer an installation on your own server, or if you prefer to switch back to Classic TestRail instead, please contact us."
+      }
+    },
+    "enterprise_standard": {
+      "banner_header": "TestRail Enterprise Cloud",
+      "banner_body": "Please contact us to manage your subscription.",
+      "support_link": "https://secure.gurock.com/customers/support/",
+      "overview": {
+        "banner_header": "Welcome to the administration area!",
+        "banner_body": "The administration area lets you configure projects, various customization and integration settings as well as manage users, roles and permissions."
+      }
+    }
+  },
+  "links": {
+    "add_project": {
+      "link_text": "Add a new project",
+      "href": "index.php?/admin/projects/add/"
+    },
+    "add_disable_users": {
+      "link_text": "Add or disable users",
+      "href": "index.php?/admin/users/overview"
+    },
+    "manage_subscription": {
+      "link_text": "Manage your subscription",
+      "href": "index.php?/admin/subscription"
+    },
+    "contact_us": {
+      "link_text": "Contact Us",
+      "href": "https://secure.gurock.com/customers/support"
+    },
+    "contact_us_create_subscription":{
+      "link_text":"Contact us to create a subscription",
+      "href":"https://secure.gurock.com/customers/support"
+    },
+    "purchase_licenses":{
+      "link_text":"Purchase licenses",
+      "href":"https://www.gurock.com/testrail/pricing/cloud"
+    },
+    "switch_back_classic_testrail": {
+      "link_text": "Switch back to Classic TestRail",
+      "href": "https://secure.gurock.com/customers/support"
+    },
+    "get_quote": {
+      "link_text": "Get a quote or contact support",
+      "href": "https://www.gurock.com/testrail/support"
+    }
+  },
+  "subscription_box_body": "Manage your subscription or create backups."
+}
