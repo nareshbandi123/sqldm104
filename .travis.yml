@@ -6,4 +6,4 @@ install:
   - pip install requests
   - pip install python-dateutil
   - pip install selenium
-script: setup.py
+script: ./setup.py
