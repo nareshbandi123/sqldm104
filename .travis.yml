@@ -5,4 +5,5 @@ cache: pip
 install:
   - pip install requests
   - pip install python-dateutil
+  - pip install selenium
 script: setup.py
